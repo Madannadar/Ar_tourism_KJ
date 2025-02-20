@@ -60,6 +60,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1.5s, transform 1.5s;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
   }
   
   /* Call-to-Action Button */
