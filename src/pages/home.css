@@ -33,11 +33,52 @@ body {
     text-align: center;
   }
   
-  .hero h1 {
-    font-size: 4rem;
-    font-family: 'Montserrat', sans-serif;
+  @keyframes scrollUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scrollUpDelayed {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    30% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-scrollUp {
     animation: scrollUp 2s ease-out;
+  }
+  
+  .animate-scrollUpDelayed {
+    animation: scrollUpDelayed 2.5s ease-out;
+  }
+  
+  h1, h2 {
     max-width: 90%;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
   }
   
   @keyframes scrollUp {

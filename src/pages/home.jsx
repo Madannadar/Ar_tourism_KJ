@@ -35,9 +35,15 @@ const Home = () => {
 
       {/* Hero Section */}
       <div className="hero">
-        <h1>Wellcome to jehangir art gallery mumbai</h1> <br />
-        <h1>Step Into the Future of Art with AR</h1>
-      </div>
+  <div className="flex flex-col items-center justify-center gap-6">
+    <h1 className="text-6xl font-montserrat animate-scrollUp leading-tight">
+      Welcome to Jehangir Art Gallery Mumbai
+    </h1>
+    <h2 className="text-4xl font-montserrat animate-scrollUpDelayed">
+      Step Into the Future of Art with AR
+    </h2>
+  </div>
+</div>
       
 
       {/* Description Section */}
