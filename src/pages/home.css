@@ -141,3 +141,45 @@ body {
   }
 
   
+  /* Instructions Section */
+.instructions {
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 40px auto;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s, transform 1.5s;
+}
+
+.instructions h2 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  color: #6a11cb;
+}
+
+.instructions ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.instructions li strong {
+  color: #2575fc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .instructions {
+    font-size: 1rem;
+    padding: 30px 20px;
+  }
+  .instructions h2 {
+    font-size: 1.5rem;
+  }
+}
