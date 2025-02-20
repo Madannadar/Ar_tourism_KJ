@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0a;
+  color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand-link {
+  color: white; /* Ensure the text is white */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.navbar-brand-link:hover {
+  opacity: 0.8; /* Add a slight hover effect */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  .navbar-brand-link {
+    font-size: 1.2rem;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
