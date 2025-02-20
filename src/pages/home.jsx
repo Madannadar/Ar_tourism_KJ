@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './home.css'; // Import the CSS file for styling
+// import bgImage from '../assets/bg.jpg'; // Update the path as needed
 
 const Home = () => {
   // Add a scroll animation effect for the description
@@ -22,6 +23,11 @@ const Home = () => {
 
   return (
     <div className="App">
+      {/* Background Image */}
+      {/* <div className="background-container">
+        <img src={bgImage} alt="" className="background-image" />
+      </div> */}
+      
       {/* Marquee Section */}
       <div className="marquee" aria-label="Scrolling message about AR experience">
         🚀 Experience the Future of Art | AR-Powered Tourism Begins Here 🚀
