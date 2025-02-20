@@ -15,6 +15,11 @@ const Home = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const openSnapLens = (e) => {
+    e.preventDefault();
+    window.location.href = 'https://lens.snap.com/experience/95db1c02-c52c-4010-a3b3-2afbd1644d26';
+  };
+
   return (
     <div className="App">
       {/* Marquee Section */}
@@ -32,7 +37,7 @@ const Home = () => {
         <p>
           Welcome to the future of tourism! Explore Jehangir Art Gallery like never before with
           cutting-edge Augmented Reality. Witness paintings come to life, immerse yourself in the
-          artist’s vision, and interact with history in a whole new dimension.
+          artist's vision, and interact with history in a whole new dimension.
         </p>
         <p>
           Revolutionize your experience—step beyond reality and into the world of digital art.
@@ -40,7 +45,7 @@ const Home = () => {
       </div>
 
       {/* Call-to-Action Button */}
-      <a href="camera" className="cta-button" aria-label="Enter AR Experience">
+      <a href="#" onClick={openSnapLens} className="cta-button" aria-label="Enter AR Experience">
         Enter AR Experience
       </a>
     </div>
